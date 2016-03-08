@@ -29,8 +29,11 @@ public class Proxy {
 	private static Proxy yo;
 	private String urlServer;
 
+	//private Proxy() {
+	//	this.urlServer = "169.67.140.42:3306";
+	//}
 	private Proxy() {
-		this.urlServer = "169.67.140.42:3306";
+		this.urlServer = "192.168.1.13:8080";
 	}
 
 	public static Proxy get() {

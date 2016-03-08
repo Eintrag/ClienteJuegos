@@ -49,6 +49,6 @@
             android:layout_height="wrap_content"
             android:text="Create account"
             android:id="@+id/btnCreateAccount"
-            android:onClick="login" />
+            android:onClick="createAccount" />
     </LinearLayout>
 </RelativeLayout>

@@ -22,6 +22,7 @@
         </activity>
         <activity android:name=".gui.LoginActivity" />
         <activity android:name=".gui.WaitingAreaActivity"></activity>
+        <activity android:name=".gui.CreateAccountActivity"></activity>
     </application>
 
 </manifest>

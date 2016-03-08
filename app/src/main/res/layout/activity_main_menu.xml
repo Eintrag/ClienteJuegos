@@ -28,6 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Create account"
-            android:id="@+id/btnCreateAccount" />
+            android:id="@+id/btnCreateAccount"
+            android:onClick="createAccount"/>
     </LinearLayout>
 </RelativeLayout>

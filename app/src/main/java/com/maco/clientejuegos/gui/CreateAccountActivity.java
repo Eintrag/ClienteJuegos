@@ -32,11 +32,11 @@ public class CreateAccountActivity extends AppCompatActivity{
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_register);
         Store.get().setCurrentContext(this);
     }
 
-    public void register(View view) {
+    public void createAccount(View view) {
         if (registerTask!=null)
             return;
         EditText etEmail= (EditText) this.findViewById(R.id.etEmail);
