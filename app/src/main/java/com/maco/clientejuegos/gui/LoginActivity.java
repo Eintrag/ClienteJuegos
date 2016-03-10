@@ -32,14 +32,14 @@ public class LoginActivity extends AppCompatActivity {
         Store.get().setCurrentContext(this);
     }
 
-    public void login(View view) {
+    public void loginServer(View view) {
         if (loginTask!=null)
             return;
         EditText etEmail= (EditText) this.findViewById(R.id.etEmail);
         EditText etPwd= (EditText) this.findViewById(R.id.etPwd);
         this.loginTask=new LoginTask(this, etEmail.getText().toString(), etPwd.getText().toString());
         this.loginTask.execute();
-        JSONMessage resultadoLogin= null;
+        JSONMessage resultadoLogin = null;
         try {
             resultadoLogin = loginTask.get();
             if (resultadoLogin.getType().equals(ErrorMessage.class.getSimpleName())) {

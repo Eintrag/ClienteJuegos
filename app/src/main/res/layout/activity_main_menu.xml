@@ -22,13 +22,13 @@
             android:layout_height="wrap_content"
             android:text="Login"
             android:id="@+id/btnLogin"
-            android:onClick="login" />
+            android:onClick="goToLogin" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Create account"
             android:id="@+id/btnCreateAccount"
-            android:onClick="createAccount"/>
+            android:onClick="goToCreateAccount"/>
     </LinearLayout>
 </RelativeLayout>

@@ -55,17 +55,7 @@ public class CreateAccountActivity extends AppCompatActivity{
                 Store.get().toast(em.getText());
             } else if (resultado.getType().equals(OKMessage.class.getSimpleName())) {
                 OKMessage okM = (OKMessage) resultado;
-                Store.get().toast("Bienvenid@, " + email);
-                try {
-                    int idUser = Integer.parseInt(okM.getAdditionalInfo().get(0).toString());
-                    User user = new User(etEmail.getText().toString(), idUser);
-                    Store.get().setUser(user);
-                    Intent intent = new Intent(this, WaitingAreaActivity.class);
-                    startActivity(intent);
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                    Store.get().toast("Respuesta del servidor desconocida: " + e.getMessage());
-                }
+                Store.get().toast("Cuenta creada, " + email);
             }
         } catch (InterruptedException e) {
             e.printStackTrace();

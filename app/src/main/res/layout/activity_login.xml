@@ -40,6 +40,6 @@
             android:layout_height="wrap_content"
             android:text="Login"
             android:id="@+id/btnLogin"
-            android:onClick="login" />
+            android:onClick="loginServer" />
     </LinearLayout>
 </RelativeLayout>

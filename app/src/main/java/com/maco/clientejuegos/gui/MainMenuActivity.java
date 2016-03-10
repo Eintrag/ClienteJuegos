@@ -18,12 +18,12 @@ public class MainMenuActivity extends AppCompatActivity {
         Store.get().setCurrentContext(this);
     }
 
-    public void createAccount(View view){
+    public void goToCreateAccount(View view){
         Intent intent = new Intent (this, CreateAccountActivity.class);
         startActivity(intent);
     }
 
-    public void login(View view) {
+    public void goToLogin(View view) {
         Intent intent=new Intent(this, LoginActivity.class);
         startActivity(intent);
 
