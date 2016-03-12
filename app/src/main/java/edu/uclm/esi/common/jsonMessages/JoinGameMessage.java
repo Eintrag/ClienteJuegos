@@ -3,11 +3,10 @@ package edu.uclm.esi.common.jsonMessages;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-/**
- * Created by David on 03/03/2016.
- */
 public class JoinGameMessage extends JSONMessage{
+    @JSONable
     private int idUser;
+    @JSONable
     private int idGame;
 
     public JoinGameMessage(int idUser, int idGame){
@@ -17,7 +16,7 @@ public class JoinGameMessage extends JSONMessage{
     }
 
     public JoinGameMessage(JSONObject jso) throws JSONException{
-        this(Integer.parseInt(jso.get("idUser").toString()),Integer.parseInt(jso.get("idGame").toString()));
+        this(Integer.parseInt(jso.get("idUser").toString()), Integer.parseInt(jso.get("idGame").toString()));
     }
     public int getIdUser (){
         return idUser;

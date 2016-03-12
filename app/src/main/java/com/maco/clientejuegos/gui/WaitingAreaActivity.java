@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.maco.clientejuegos.R;
 import com.maco.clientejuegos.domain.Store;
@@ -15,7 +14,9 @@ import com.maco.clientejuegos.http.NetTask;
 import edu.uclm.esi.common.jsonMessages.JSONMessage;
 import edu.uclm.esi.common.jsonMessages.JoinGameMessage;
 import edu.uclm.esi.common.jsonMessages.LoginMessageAnnouncement;
+import edu.uclm.esi.common.jsonMessages.OKMessage;
 import edu.uclm.esi.common.jsonMessages.SudokuBoardMessage;
+import edu.uclm.esi.common.jsonMessages.SudokuWaitingMessage;
 
 public class WaitingAreaActivity extends AppCompatActivity implements IMessageDealerActivity {
     private LinearLayout layout;
@@ -36,8 +37,8 @@ public class WaitingAreaActivity extends AppCompatActivity implements IMessageDe
         Thread t=new Thread(messageRecoverer);
         t.start();
 
-        JoinGameMessage jgm=new JoinGameMessage(store.getUser().getIdUser(),store.getIdGame());
-        NetTask task=new NetTask ("JoinGame.action",jgm);
+        JoinGameMessage jgm = new JoinGameMessage(store.getUser().getIdUser(), store.getIdGame());
+        NetTask task=new NetTask ("JoinGame.action", jgm);
         task.execute();
     }
 
@@ -49,15 +50,24 @@ public class WaitingAreaActivity extends AppCompatActivity implements IMessageDe
             tv.setText("Ha llegado "+((LoginMessageAnnouncement) jsm).getEmail());
             this.layout.addView(tv);
         }
-        if (jsm.getType().equals(SudokuBoardMessage.class.getSimpleName())){
+        else if (jsm.getType().equals(SudokuBoardMessage.class.getSimpleName())){
+            TextView tv=new TextView(this);
+            tv.setText("Sudoku comienza!");
+            this.layout.addView(tv);
             SudokuBoardMessage sbm=(SudokuBoardMessage) jsm;
             String casillas = sbm.getBoard();
             Store.get().setMatch(sbm.getIdMatch());
-            Intent intent = new Intent(this, PartidaActivity.class);
+            Intent intent = new Intent(this, PartidaSudokuActivity.class);
             intent.putExtra("board",casillas);
             intent.putExtra("jugador1", sbm.getUser1());
             intent.putExtra("jugador2", sbm.getUser2());
             startActivity(intent);
+        }
+        else if(jsm.getType().equals(OKMessage.class.getSimpleName())){
+            //TODO delete this, only exists for testing
+            TextView tv=new TextView(this);
+            tv.setText("Sudoku comienza!");
+            this.layout.addView(tv);
         }
     }
 }

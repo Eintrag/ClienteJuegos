@@ -21,8 +21,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".gui.LoginActivity" />
-        <activity android:name=".gui.WaitingAreaActivity"></activity>
-        <activity android:name=".gui.CreateAccountActivity"></activity>
+        <activity android:name=".gui.WaitingAreaActivity" />
+        <activity android:name=".gui.CreateAccountActivity" />
+        <activity android:name=".gui.PartidaSudokuActivity" />
     </application>
 
 </manifest>

@@ -33,7 +33,7 @@ public class Proxy {
 	//	this.urlServer = "169.67.140.42:3306";
 	//}
 	private Proxy() {
-		this.urlServer = "172.19.149.122:8080";
+		this.urlServer = "192.168.1.42:8080";
 	}
 
 	public static Proxy get() {
