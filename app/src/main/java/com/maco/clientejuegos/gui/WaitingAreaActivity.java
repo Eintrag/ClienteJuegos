@@ -58,7 +58,7 @@ public class WaitingAreaActivity extends AppCompatActivity implements IMessageDe
             String casillas = sbm.getBoard();
             Store.get().setMatch(sbm.getIdMatch());
             Intent intent = new Intent(this, PartidaSudokuActivity.class);
-            intent.putExtra("board",casillas);
+            intent.putExtra("board", casillas);
             intent.putExtra("jugador1", sbm.getUser1());
             intent.putExtra("jugador2", sbm.getUser2());
             startActivity(intent);
