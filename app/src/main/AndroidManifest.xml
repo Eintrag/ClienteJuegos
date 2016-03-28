@@ -24,6 +24,7 @@
         <activity android:name=".gui.WaitingAreaActivity" />
         <activity android:name=".gui.CreateAccountActivity" />
         <activity android:name=".gui.PartidaSudokuActivity" />
+        <activity android:name=".gui.RankingTabActivity"></activity>
     </application>
 
 </manifest>
