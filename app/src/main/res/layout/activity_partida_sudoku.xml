@@ -55,7 +55,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+                    android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -79,7 +80,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -103,7 +105,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -127,7 +130,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -151,7 +155,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -175,7 +180,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -199,7 +205,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -223,7 +230,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -247,7 +255,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
             </TableRow>
 
             <TableRow
@@ -278,7 +287,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -302,7 +312,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -326,7 +337,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -350,7 +362,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -374,7 +387,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -398,7 +412,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -422,7 +437,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -446,7 +462,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -470,7 +487,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
             </TableRow>
 
             <TableRow
@@ -501,7 +519,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -525,7 +544,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -549,7 +569,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -573,7 +594,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -597,7 +619,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -621,7 +644,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -645,7 +669,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -669,7 +694,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -693,7 +719,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
             </TableRow>
 
             <TableRow
@@ -724,7 +751,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -748,7 +776,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -772,7 +801,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -796,7 +826,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -820,7 +851,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -844,7 +876,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -868,7 +901,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -892,7 +926,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -916,7 +951,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
             </TableRow>
 
             <TableRow
@@ -947,7 +983,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -971,7 +1008,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -995,7 +1033,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -1019,7 +1058,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -1043,7 +1083,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -1067,7 +1108,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -1091,7 +1133,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -1115,7 +1158,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -1139,7 +1183,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
             </TableRow>
 
             <TableRow
@@ -1170,7 +1215,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -1194,7 +1240,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -1218,7 +1265,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -1242,7 +1290,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -1266,7 +1315,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -1290,7 +1340,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -1314,7 +1365,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -1338,7 +1390,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -1362,7 +1415,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
             </TableRow>
 
             <TableRow
@@ -1393,7 +1447,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -1417,7 +1472,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -1441,7 +1497,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -1465,7 +1522,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -1489,7 +1547,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -1513,7 +1572,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -1537,7 +1597,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -1561,7 +1622,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -1585,7 +1647,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
             </TableRow>
 
             <TableRow
@@ -1616,7 +1679,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -1640,7 +1704,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -1664,7 +1729,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -1688,7 +1754,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -1712,7 +1779,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -1736,7 +1804,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -1760,7 +1829,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -1784,7 +1854,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -1808,7 +1879,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
             </TableRow>
 
             <TableRow
@@ -1839,7 +1911,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -1863,7 +1936,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -1887,7 +1961,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -1911,7 +1986,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -1935,7 +2011,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -1959,7 +2036,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -1983,7 +2061,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -2007,7 +2086,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -2031,7 +2111,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="26dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
             </TableRow>
         </TableLayout>
 
@@ -2078,7 +2159,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -2102,7 +2184,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -2126,7 +2209,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -2150,7 +2234,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -2174,7 +2259,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -2198,7 +2284,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -2222,7 +2309,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -2246,7 +2334,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -2270,7 +2359,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
             </TableRow>
 
             <TableRow
@@ -2301,7 +2391,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -2325,7 +2416,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -2349,7 +2441,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -2373,7 +2466,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -2397,7 +2491,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -2421,7 +2516,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -2445,7 +2541,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -2469,7 +2566,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -2493,7 +2591,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
             </TableRow>
 
             <TableRow
@@ -2524,7 +2623,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -2548,7 +2648,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -2572,7 +2673,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -2596,7 +2698,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -2620,7 +2723,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -2644,7 +2748,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -2668,7 +2773,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -2692,7 +2798,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -2716,7 +2823,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
             </TableRow>
 
             <TableRow
@@ -2747,7 +2855,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -2771,7 +2880,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -2795,7 +2905,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -2819,7 +2930,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -2843,7 +2955,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -2867,7 +2980,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -2891,7 +3005,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -2915,7 +3030,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -2939,7 +3055,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
             </TableRow>
 
             <TableRow
@@ -2970,7 +3087,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -2994,7 +3112,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -3018,7 +3137,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -3042,7 +3162,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -3066,7 +3187,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -3090,7 +3212,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -3114,7 +3237,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -3138,7 +3262,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -3162,7 +3287,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
             </TableRow>
 
             <TableRow
@@ -3193,7 +3319,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -3217,7 +3344,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -3241,7 +3369,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -3265,7 +3394,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -3289,7 +3419,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -3313,7 +3444,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -3337,7 +3469,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -3361,7 +3494,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -3385,7 +3519,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
             </TableRow>
 
             <TableRow
@@ -3416,7 +3551,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -3440,7 +3576,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -3464,7 +3601,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -3488,7 +3626,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -3512,7 +3651,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -3536,7 +3676,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -3560,7 +3701,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -3584,7 +3726,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -3608,7 +3751,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
             </TableRow>
 
             <TableRow
@@ -3639,7 +3783,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -3663,7 +3808,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -3687,7 +3833,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -3711,7 +3858,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -3735,7 +3883,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -3759,7 +3908,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -3783,7 +3933,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -3807,7 +3958,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -3831,7 +3983,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
             </TableRow>
 
             <TableRow
@@ -3862,7 +4015,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -3886,7 +4040,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -3910,7 +4065,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -3934,7 +4090,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -3958,7 +4115,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -3982,7 +4140,8 @@
                     android:background="@drawable/back"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -4006,7 +4165,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -4030,7 +4190,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="12dp"
-					android:textAlignment="center" />
+					android:textAlignment="center"
+					android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -4054,7 +4215,8 @@
                     android:background="@drawable/backgrey"
                     android:inputType="number"
                     android:textSize="12dp"
-                    android:textAlignment="center" />
+                    android:textAlignment="center"
+					android:textColor="#000000" />
             </TableRow>
         </TableLayout>
     </LinearLayout>
