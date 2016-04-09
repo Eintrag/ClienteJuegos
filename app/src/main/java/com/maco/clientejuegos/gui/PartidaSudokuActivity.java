@@ -205,10 +205,11 @@ public class PartidaSudokuActivity extends AppCompatActivity {
 
 
         //Bucle de relleno de los sudoku iniciales:
+
         for(int i=0; i<board.length(); i++) {
             if (Character.isDigit(board.charAt(i))) {
-                casillas.get(i).setText(board.charAt(i));
-                casillasRival.get(i).setText(board.charAt(i));
+                casillas.get(i).setText(Character.toString(board.charAt(i)));
+                casillasRival.get(i).setText(Character.toString(board.charAt(i)));
             }
         }
 
