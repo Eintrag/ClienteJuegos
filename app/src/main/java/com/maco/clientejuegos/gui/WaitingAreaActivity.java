@@ -25,47 +25,46 @@ public class WaitingAreaActivity extends AppCompatActivity implements IMessageDe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_waiting_area);
-        this.layout=(LinearLayout) findViewById(R.id.layoutWA);
+        this.layout = (LinearLayout) findViewById(R.id.layoutWA);
         Store store = Store.get();
         store.setCurrentContext(this);
         store.lanzarRecuperadorDeMensajes(this);
 
         //Creamos recuperador de mensajes.
-        MessageRecoverer messageRecoverer= MessageRecoverer.get(this);
+        MessageRecoverer messageRecoverer = MessageRecoverer.get(this);
         messageRecoverer.setActivity(this);
 
-        Thread t=new Thread(messageRecoverer);
+        Thread t = new Thread(messageRecoverer);
         t.start();
 
         JoinGameMessage jgm = new JoinGameMessage(store.getUser().getIdUser(), store.getIdGame());
-        NetTask task=new NetTask ("JoinGame.action", jgm);
+        NetTask task = new NetTask("JoinGame.action", jgm);
         task.execute();
     }
 
     @Override
     public void showMessage(JSONMessage jsm) {
         //Se ejecuta cada vez que messageRecover mande una petición al servidor. Dependiendo del tipo hará una u otra cosa.
-        if(jsm.getType().equals(LoginMessageAnnouncement.class.getSimpleName())){
-            TextView tv=new TextView(this);
-            tv.setText("Ha llegado "+((LoginMessageAnnouncement) jsm).getEmail());
+        if (jsm.getType().equals(LoginMessageAnnouncement.class.getSimpleName())) {
+            TextView tv = new TextView(this);
+            tv.setText("Ha llegado " + ((LoginMessageAnnouncement) jsm).getEmail());
             this.layout.addView(tv);
-        }
-        else if (jsm.getType().equals(SudokuBoardMessage.class.getSimpleName())){
-            TextView tv=new TextView(this);
+        } else if (jsm.getType().equals(SudokuBoardMessage.class.getSimpleName())) {
+            TextView tv = new TextView(this);
             tv.setText("Sudoku comienza!");
             this.layout.addView(tv);
-            SudokuBoardMessage sbm=(SudokuBoardMessage) jsm;
+            SudokuBoardMessage sbm = (SudokuBoardMessage) jsm;
             String casillas = sbm.getBoard();
             Store.get().setMatch(sbm.getIdMatch());
             Intent intent = new Intent(this, PartidaSudokuActivity.class);
             intent.putExtra("board", casillas);
             intent.putExtra("jugador1", sbm.getUser1());
             intent.putExtra("jugador2", sbm.getUser2());
+            intent.putExtra("idMatch", sbm.getIdMatch());
             startActivity(intent);
-        }
-        else if(jsm.getType().equals(OKMessage.class.getSimpleName())){
+        } else if (jsm.getType().equals(OKMessage.class.getSimpleName())) {
             //TODO delete this, only exists for testing
-            TextView tv=new TextView(this);
+            TextView tv = new TextView(this);
             tv.setText("Sudoku comienza!");
             this.layout.addView(tv);
         }

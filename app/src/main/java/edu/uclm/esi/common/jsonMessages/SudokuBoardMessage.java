@@ -3,9 +3,6 @@ package edu.uclm.esi.common.jsonMessages;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-/**
- * Created by David on 03/03/2016.
- */
 public class SudokuBoardMessage extends JSONMessage{
     @JSONable
     private String board;
@@ -17,7 +14,7 @@ public class SudokuBoardMessage extends JSONMessage{
     private int idMatch;
 
     public SudokuBoardMessage (String board, String user1, String user2, int idMatch){
-        super(false);
+        super(true);
         this.board=board;
         this.user1=user1;
         this.user2=user2;

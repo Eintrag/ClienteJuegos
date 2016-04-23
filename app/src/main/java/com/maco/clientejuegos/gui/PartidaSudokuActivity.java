@@ -7,12 +7,37 @@ import android.widget.TextView;
 
 import com.maco.clientejuegos.R;
 import com.maco.clientejuegos.domain.Store;
+import com.maco.clientejuegos.http.MessageRecoverer;
+import com.maco.clientejuegos.http.MovementSender;
+import com.maco.clientejuegos.http.NetTask;
+import com.maco.clientejuegos.http.Proxy;
+
+import org.json.JSONException;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ExecutionException;
 import java.util.logging.Handler;
 
-public class PartidaSudokuActivity extends AppCompatActivity {
+import edu.uclm.esi.common.jsonMessages.JSONMessage;
+import edu.uclm.esi.common.jsonMessages.SudokuBoardMessage;
+
+public class PartidaSudokuActivity extends AppCompatActivity implements IMessageDealerActivity {
+    private List<TextView> casillas = new ArrayList<TextView>();
+    private List<TextView> casillasRival = new ArrayList<TextView>();
+    private int NUMCASILLAS = 81;
+    private int idMatch;
+    private String idUser;
+
+    @Override
+    public void showMessage(JSONMessage jsm) {
+        //Se ejecuta cada vez que messageRecover mande una petición al servidor. Dependiendo del tipo hará una u otra cosa.
+        if (jsm.getType().equals(SudokuBoardMessage.class.getSimpleName())) {
+            SudokuBoardMessage sbm = (SudokuBoardMessage) jsm;
+            String casillas = sbm.getBoard();
+            poblarTableroRival(casillas);
+        }
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,16 +45,35 @@ public class PartidaSudokuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_partida_sudoku);
         Store.get().setCurrentContext(this);
         String board;
+        String jugador1;
+        String jugador2;
+
+
+        MessageRecoverer messageRecoverer = MessageRecoverer.get(this);
+        messageRecoverer.setActivity(this);
+
+
         if (savedInstanceState == null) {
             Bundle extras = getIntent().getExtras();
-            if(extras == null) {
-                board= null;
+            if (extras == null) {
+                board = null;
+                jugador1 = null;
+                jugador2 = null;
+                this.idMatch = 0;
             } else {
-                board= extras.getString("board");
+                board = extras.getString("board");
+                jugador1 = extras.getString("jugador1");
+                jugador2 = extras.getString("jugador2");
+                this.idMatch = extras.getInt("idMatch");
             }
         } else {
             board = (String) savedInstanceState.getSerializable("board");
+            jugador1 = (String) savedInstanceState.getSerializable("jugador1");
+            jugador2 = (String) savedInstanceState.getSerializable("jugador2");
+            this.idMatch = (int) savedInstanceState.getSerializable("idMatch");
         }
+        Store store = Store.get();
+        this.idUser = String.valueOf(store.getUser().getIdUser());
         //char[][] squares = new char[9][9];
         //for (int row = 0; row < 8; row++)
         //    for (int col = 0; col < 8; col++)
@@ -37,7 +81,7 @@ public class PartidaSudokuActivity extends AppCompatActivity {
         //TODO debe haber una forma mejor de recorrer los textviews
         //TODO ids más significativos para los textview
 
-        List<TextView> casillas= new ArrayList<TextView>();
+
         casillas.add((TextView) findViewById(R.id.tv0));
         casillas.add((TextView) findViewById(R.id.tv1));
         casillas.add((TextView) findViewById(R.id.tv2));
@@ -120,7 +164,7 @@ public class PartidaSudokuActivity extends AppCompatActivity {
         casillas.add((TextView) findViewById(R.id.tv79));
         casillas.add((TextView) findViewById(R.id.tv80));
 
-        List<TextView> casillasRival= new ArrayList<TextView>();
+
         casillasRival.add((TextView) findViewById(R.id.tvr0));
         casillasRival.add((TextView) findViewById(R.id.tvr1));
         casillasRival.add((TextView) findViewById(R.id.tvr2));
@@ -205,12 +249,52 @@ public class PartidaSudokuActivity extends AppCompatActivity {
 
 
         //Bucle de relleno de los sudoku iniciales:
+        poblarMiTablero(board);
+        poblarTableroRival(board);
 
-        for(int i=0; i<board.length(); i++) {
-            if (Character.isDigit(board.charAt(i))) {
-                casillas.get(i).setText(Character.toString(board.charAt(i)));
-                casillasRival.get(i).setText(Character.toString(board.charAt(i)));
+        MovementSender movementSender = MovementSender.get(this);
+        movementSender.setActivity(this);
+
+        Thread t = new Thread(movementSender);
+        t.start();
+
+    }
+
+    public String getBoard() {
+        String board = "";
+        for (int i = 0; i < this.NUMCASILLAS; i++) {
+            String casilla = this.casillas.get(i).getText().toString();
+            if (casilla.equals("")) {
+                board += " ";
+            } else {
+                board += this.casillas.get(i).getText();
             }
+        }
+        return board;
+    }
+
+    public String getIdUser() {
+        return this.idUser;
+    }
+
+    public int getIdMatch() {
+        return this.idMatch;
+    }
+
+    private void poblarMiTablero(String board) {
+        for (int i = 0; i < board.length(); i++) {
+            if (Character.isDigit(board.charAt(i))) {
+                this.casillas.get(i).setText(Character.toString(board.charAt(i)));
+                this.casillas.get(i).setEnabled(false);
+            }
+        }
+    }
+
+    private void poblarTableroRival(String board) {
+        for (int i = 0; i < board.length(); i++) {
+            //if (Character.isDigit(board.charAt(i))) {
+            this.casillasRival.get(i).setText(Character.toString(board.charAt(i)));
+            //}
         }
 
     }
