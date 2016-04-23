@@ -2,6 +2,7 @@ package com.maco.clientejuegos.gui;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.LinearLayout;
 import android.widget.TableLayout;
 import android.widget.TextView;
 
@@ -20,7 +21,9 @@ import java.util.concurrent.ExecutionException;
 import java.util.logging.Handler;
 
 import edu.uclm.esi.common.jsonMessages.JSONMessage;
+import edu.uclm.esi.common.jsonMessages.LostGameMessage;
 import edu.uclm.esi.common.jsonMessages.SudokuBoardMessage;
+import edu.uclm.esi.common.jsonMessages.WonGameMessage;
 
 public class PartidaSudokuActivity extends AppCompatActivity implements IMessageDealerActivity {
     private List<TextView> casillas = new ArrayList<TextView>();
@@ -28,7 +31,7 @@ public class PartidaSudokuActivity extends AppCompatActivity implements IMessage
     private int NUMCASILLAS = 81;
     private int idMatch;
     private String idUser;
-
+    private LinearLayout layout;
     @Override
     public void showMessage(JSONMessage jsm) {
         //Se ejecuta cada vez que messageRecover mande una petición al servidor. Dependiendo del tipo hará una u otra cosa.
@@ -37,12 +40,19 @@ public class PartidaSudokuActivity extends AppCompatActivity implements IMessage
             String casillas = sbm.getBoard();
             poblarTableroRival(casillas);
         }
+        else if (jsm.getType().equals(WonGameMessage.class.getSimpleName())){
+            Store.get().toast("Has ganado");
+        }
+        else if (jsm.getType().equals(LostGameMessage.class.getSimpleName())){
+            Store.get().toast("Has perdido");
+        }
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_partida_sudoku);
+        this.layout = (LinearLayout) findViewById(R.id.layoutPSudoku);
         Store.get().setCurrentContext(this);
         String board;
         String jugador1;

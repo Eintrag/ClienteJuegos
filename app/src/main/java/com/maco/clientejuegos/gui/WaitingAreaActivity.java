@@ -16,7 +16,6 @@ import edu.uclm.esi.common.jsonMessages.JoinGameMessage;
 import edu.uclm.esi.common.jsonMessages.LoginMessageAnnouncement;
 import edu.uclm.esi.common.jsonMessages.OKMessage;
 import edu.uclm.esi.common.jsonMessages.SudokuBoardMessage;
-import edu.uclm.esi.common.jsonMessages.SudokuWaitingMessage;
 
 public class WaitingAreaActivity extends AppCompatActivity implements IMessageDealerActivity {
     private LinearLayout layout;
