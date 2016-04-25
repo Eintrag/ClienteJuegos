@@ -58,7 +58,6 @@ public class PartidaSudokuActivity extends AppCompatActivity implements IMessage
         String jugador1;
         String jugador2;
 
-
         MessageRecoverer messageRecoverer = MessageRecoverer.get(this);
         messageRecoverer.setActivity(this);
 
