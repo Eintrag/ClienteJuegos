@@ -10,7 +10,9 @@ import com.maco.clientejuegos.R;
 import com.maco.clientejuegos.domain.Store;
 import com.maco.clientejuegos.http.MessageRecoverer;
 
-public class RankingActivity extends AppCompatActivity {
+import edu.uclm.esi.common.jsonMessages.JSONMessage;
+
+public class RankingActivity extends AppCompatActivity implements IMessageDealerActivity {
     private LinearLayout layout;
 
     @Override
@@ -23,8 +25,11 @@ public class RankingActivity extends AppCompatActivity {
         ListView lv = (ListView) findViewById(R.id.listViewRanking); //Lista que muestra el ranking
         ListAdapter la = lv.getAdapter(); //Manejador de la ListView
 
-       // MessageRecoverer messageRecoverer = MessageRecoverer.get(this);
-       // messageRecoverer.setActivity(this);
+        MessageRecoverer messageRecoverer = MessageRecoverer.get(this);
+        messageRecoverer.setActivity(this);
+    }
 
+    public void showMessage(JSONMessage jsm){
+        if (jsm.getType().equals
     }
 }

@@ -25,6 +25,8 @@ public class JSONMessagesBuilder {
 			return new OKMessage(jso);
 		else if (jso.get("type").equals(RegisterMessage.class.getSimpleName()))
 			return new RegisterMessage(jso);
+		else if (jso.get("type").equals(RankingMessage.class.getSimpleName()))
+			return new RankingMessage(jso);
 		return null;
 	}
 }
