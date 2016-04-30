@@ -30,5 +30,13 @@
             android:text="Create account"
             android:id="@+id/btnCreateAccount"
             android:onClick="goToCreateAccount"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SHOW RANKING"
+            android:id="@+id/btnShowRanking"
+            android:layout_gravity="center_horizontal"
+            android:onClick="goToRanking" />
     </LinearLayout>
 </RelativeLayout>

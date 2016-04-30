@@ -28,4 +28,9 @@ public class MainMenuActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+
+    public void goToRanking(View view){
+        Intent intent=new Intent(this, RankingActivity.class);
+        startActivity(intent);
+    }
 }
