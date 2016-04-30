@@ -6,6 +6,7 @@ import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ListAdapter;
@@ -32,7 +33,6 @@ public class RankingActivity extends AppCompatActivity {
     private RankingTask rankingTask;
     private LinearLayout layout;
     private ListView lv;
-    private ListAdapter la;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +42,6 @@ public class RankingActivity extends AppCompatActivity {
         Store.get().setCurrentContext(this);
 
         lv = (ListView) findViewById(R.id.listViewRanking); //Lista que muestra el ranking
-        la = lv.getAdapter(); //Manejador de la ListView
 
         showRanking();
     }
@@ -84,7 +83,16 @@ public class RankingActivity extends AppCompatActivity {
     */
 
     private void rellenarRanking(List<RankingEntry> re){
+        ArrayAdapter<String> adaptador = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, concatenaRankingEntry(re));
+        lv.setAdapter(adaptador);
+    }
 
+    private String[] concatenaRankingEntry(List<RankingEntry> re){
+        String [] items = new String[10];
+        for (int i=0; re.get(i).getEmailganador().equals("") || i<re.size(); i++){
+            items[i]=re.get(i).getEmailganador()+"; "+re.get(i).getNumVictorias()+" victorias";
+        }
+        return items;
     }
 
     class RankingTask extends AsyncTask<Void, Void, JSONMessage> {
