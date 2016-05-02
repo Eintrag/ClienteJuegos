@@ -59,7 +59,7 @@ public class RankingActivity extends AppCompatActivity {
                 Store.get().toast(em.getText());
             } else if (resultadoShowRanking.getType().equals(RankingMessage.class.getSimpleName())) {
                 RankingMessage rm = (RankingMessage) resultadoShowRanking;
-                rellenarRanking(rm.getRankingEntries());
+                Store.get().toast(rm.toString());
             }
         } catch (InterruptedException e) {
             e.printStackTrace();
