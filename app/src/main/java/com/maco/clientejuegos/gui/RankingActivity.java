@@ -21,6 +21,7 @@ import com.maco.clientejuegos.http.Proxy;
 
 import org.json.JSONException;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 
@@ -47,19 +48,31 @@ public class RankingActivity extends AppCompatActivity {
     }
 
     public void showRanking() {
-        if (rankingTask!=null)
+        if (rankingTask != null)
             return;
-        this.rankingTask=new RankingTask(this);
+        this.rankingTask = new RankingTask(this);
         this.rankingTask.execute();
         JSONMessage resultadoShowRanking = null;
         try {
             resultadoShowRanking = rankingTask.get();
             if (resultadoShowRanking.getType().equals(ErrorMessage.class.getSimpleName())) {
-                ErrorMessage em=(ErrorMessage) resultadoShowRanking;
+                ErrorMessage em = (ErrorMessage) resultadoShowRanking;
                 Store.get().toast(em.getText());
             } else if (resultadoShowRanking.getType().equals(RankingMessage.class.getSimpleName())) {
+
                 RankingMessage rm = (RankingMessage) resultadoShowRanking;
-                Store.get().toast(rm.toString());
+                RankingEntry re;
+                List <RankingEntry> listRe = new ArrayList<RankingEntry>();
+
+                for (int i = 0; i < rm.size(); i++){
+                    try {
+                        re = new RankingEntry(rm.get(i).get("emailGanador").toString(),Integer.parseInt(rm.get(i).get("numVictorias").toString()));
+                        listRe.add(re);
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
+                rellenarRanking (listRe); //Rellena el ranking en la activity
             }
         } catch (InterruptedException e) {
             e.printStackTrace();
@@ -68,19 +81,8 @@ public class RankingActivity extends AppCompatActivity {
             e.printStackTrace();
             Store.get().toast("Error en ejecución: " + e.getMessage());
         }
-        rankingTask=null;
+        rankingTask = null;
     }
-
-    /*
-    public void showMessage(JSONMessage jsm){
-
-        if (jsm.getType().equals(RankingMessage.class.getSimpleName())){
-            RankingMessage rm = (RankingMessage) jsm;
-            List<RankingEntry> rankingEntries = rm.getRankingEntries();
-            rellenarRanking(rankingEntries);
-        }
-    }
-    */
 
     private void rellenarRanking(List<RankingEntry> re){
         ArrayAdapter<String> adaptador = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, concatenaRankingEntry(re));
@@ -89,7 +91,7 @@ public class RankingActivity extends AppCompatActivity {
 
     private String[] concatenaRankingEntry(List<RankingEntry> re){
         String [] items = new String[10];
-        for (int i=0; re.get(i).getEmailganador().equals("") || i<re.size(); i++){
+        for (int i=0;i<re.size(); i++){
             items[i]=re.get(i).getEmailganador()+"; "+re.get(i).getNumVictorias()+" victorias";
         }
         return items;
