@@ -3,27 +3,20 @@ package com.maco.clientejuegos.gui;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.LinearLayout;
-import android.widget.TableLayout;
 import android.widget.TextView;
 
 import com.maco.clientejuegos.R;
 import com.maco.clientejuegos.domain.Store;
 import com.maco.clientejuegos.http.MessageRecoverer;
 import com.maco.clientejuegos.http.MovementSender;
-import com.maco.clientejuegos.http.NetTask;
-import com.maco.clientejuegos.http.Proxy;
-
-import org.json.JSONException;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.ExecutionException;
-import java.util.logging.Handler;
 
 import edu.uclm.esi.common.jsonMessages.JSONMessage;
-import edu.uclm.esi.common.jsonMessages.LostGameMessage;
 import edu.uclm.esi.common.jsonMessages.SudokuBoardMessage;
-import edu.uclm.esi.common.jsonMessages.WonGameMessage;
+import edu.uclm.esi.common.jsonMessages.SudokuMovementAnnouncementMessage;
+import edu.uclm.esi.common.jsonMessages.SudokuWinnerMessage;
 
 public class PartidaSudokuActivity extends AppCompatActivity implements IMessageDealerActivity {
     private List<TextView> casillas = new ArrayList<TextView>();
@@ -32,22 +25,30 @@ public class PartidaSudokuActivity extends AppCompatActivity implements IMessage
     private int idMatch;
     private String idUser;
     private LinearLayout layout;
+    private String lastBoardSent;
     @Override
     public void showMessage(JSONMessage jsm) {
         //Se ejecuta cada vez que messageRecover mande una petición al servidor. Dependiendo del tipo hará una u otra cosa.
-        if (jsm.getType().equals(SudokuBoardMessage.class.getSimpleName())) {
-            SudokuBoardMessage sbm = (SudokuBoardMessage) jsm;
-            String casillas = sbm.getBoard();
-            poblarTableroRival(casillas);
+        if (jsm.getType().equals(SudokuMovementAnnouncementMessage.class.getSimpleName())) {
+            SudokuMovementAnnouncementMessage sbm = (SudokuMovementAnnouncementMessage) jsm;
+            casillasRival.get(sbm.getRow() * 9 + sbm.getCol()).setText((Character.toString('*')));
         }
-        else if (jsm.getType().equals(WonGameMessage.class.getSimpleName())){
-            Store.get().toast("Has ganado");
-        }
-        else if (jsm.getType().equals(LostGameMessage.class.getSimpleName())){
-            Store.get().toast("Has perdido");
+        else if (jsm.getType().equals(SudokuWinnerMessage.class.getSimpleName())){
+            SudokuWinnerMessage swm = (SudokuWinnerMessage) jsm;
+            if(swm.getUser1().equals(idUser)){
+                Store.get().toast("Has ganado");
+            }
+            else {
+                Store.get().toast("Has perdido");
+            }
         }
     }
-
+    public String getLastBoardSent(){
+        return lastBoardSent;
+    }
+    public void setLastBoardSent(String lastBoardSent){
+        this.lastBoardSent = lastBoardSent;
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -260,7 +261,7 @@ public class PartidaSudokuActivity extends AppCompatActivity implements IMessage
         //Bucle de relleno de los sudoku iniciales:
         poblarMiTablero(board);
         poblarTableroRival(board);
-
+        lastBoardSent = getBoard();
         MovementSender movementSender = MovementSender.get(this);
         movementSender.setActivity(this);
 
@@ -273,7 +274,7 @@ public class PartidaSudokuActivity extends AppCompatActivity implements IMessage
         String board = "";
         for (int i = 0; i < this.NUMCASILLAS; i++) {
             String casilla = this.casillas.get(i).getText().toString();
-            if (casilla.equals("")) {
+            if (casilla.equals("") || Integer.parseInt(casilla) > 9) {
                 board += " ";
             } else {
                 board += this.casillas.get(i).getText();
@@ -281,7 +282,10 @@ public class PartidaSudokuActivity extends AppCompatActivity implements IMessage
         }
         return board;
     }
-
+    public int getCellValue(int i){
+        int value =  Integer.parseInt(casillas.get(i).getText().toString());
+        return value;
+    }
     public String getIdUser() {
         return this.idUser;
     }

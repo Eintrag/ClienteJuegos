@@ -6,6 +6,7 @@ import android.os.Looper;
 import com.maco.clientejuegos.gui.PartidaSudokuActivity;
 
 import edu.uclm.esi.common.jsonMessages.SudokuBoardMessage;
+import edu.uclm.esi.common.jsonMessages.SudokuMovementMessage;
 
 public class MovementSender implements Runnable {
     private final Proxy proxy;
@@ -37,14 +38,32 @@ public class MovementSender implements Runnable {
 
         while (!detenido) {
             try {
-                SudokuBoardMessage sbm = new SudokuBoardMessage(activity.getBoard(), activity.getIdUser(), activity.getIdUser(), activity.getIdMatch());
-                NetTask task = new NetTask("SendMovement.action", sbm);
-                task.execute();
+                String lastBoardSent = activity.getLastBoardSent();
+                String newBoard = "";
+                String currentBoard = activity.getBoard();
+                for (int i = 0; i < lastBoardSent.length(); i++) {
+                    if (Character.isDigit(currentBoard.charAt(i)) && lastBoardSent.charAt(i) != (currentBoard.charAt(i))){
+                        newBoard += currentBoard.charAt(i);
+                        int row = i / 9;
+                        int col = i % 9;
+                        int value = activity.getCellValue(i);
+                        sendBoard(row, col, value);
+                    }
+                    else{
+                        newBoard += lastBoardSent.charAt(i);
+                    }
+                }
+                activity.setLastBoardSent(newBoard);
                 Thread.sleep(5000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
+    }
+    public void sendBoard(int row, int col, int value){
+        SudokuMovementMessage smm = new SudokuMovementMessage(row, col, value, Integer.parseInt(activity.getIdUser()), activity.getIdMatch());
+        NetTask task = new NetTask("SendMovement.action", smm);
+        task.execute();
     }
 
     public void detener() {
