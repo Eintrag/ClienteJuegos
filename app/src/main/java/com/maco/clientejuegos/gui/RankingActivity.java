@@ -85,15 +85,17 @@ public class RankingActivity extends AppCompatActivity {
     }
 
     private void rellenarRanking(List<RankingEntry> re){
-        ArrayAdapter<String> adaptador = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, concatenaRankingEntry(re));
+        String[] rankingArray =  rankingListToArray(re);
+        ArrayAdapter<String> adaptador = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, rankingArray);
         lv.setAdapter(adaptador);
     }
 
-    private String[] concatenaRankingEntry(List<RankingEntry> re){
-        String [] items = new String[10];
+    private String[] rankingListToArray(List<RankingEntry> re){
+        List<String> rankingList = new ArrayList<String>();
         for (int i=0;i<re.size(); i++){
-            items[i]=re.get(i).getEmailganador()+"; "+re.get(i).getNumVictorias()+" victorias";
+            rankingList.add(re.get(i).getEmailganador()+" - "+re.get(i).getNumVictorias()+" victorias");
         }
+        String[]items = rankingList.toArray(new String[rankingList.size()]);
         return items;
     }
 
