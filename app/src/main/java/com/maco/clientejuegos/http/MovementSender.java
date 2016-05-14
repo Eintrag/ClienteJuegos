@@ -41,6 +41,13 @@ public class MovementSender implements Runnable {
                 String lastBoardSent = activity.getLastBoardSent();
                 String newBoard = "";
                 String currentBoard = activity.getBoard();
+                //Se manda siempre el primer número del Sudoku (independientemente de que éste no varíe con respecto a la última vez que se mandó el D), para poder controlar la desconexión
+                /*
+                if (Character.isDigit(currentBoard.charAt(0))){
+                    newBoard += currentBoard.charAt(0);
+                    sendBoard(0, 0, activity.getCellValue(0));
+                }
+                */
                 for (int i = 0; i < lastBoardSent.length(); i++) {
                     if (Character.isDigit(currentBoard.charAt(i)) && lastBoardSent.charAt(i) != (currentBoard.charAt(i))){
                         newBoard += currentBoard.charAt(i);
@@ -50,6 +57,8 @@ public class MovementSender implements Runnable {
                         sendBoard(row, col, value);
                     }
                     else{
+                        if(i==0)
+                            sendBoard(0, 0, lastBoardSent.charAt(0));
                         newBoard += lastBoardSent.charAt(i);
                     }
                 }

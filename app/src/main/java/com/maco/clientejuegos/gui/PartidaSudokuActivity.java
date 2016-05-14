@@ -1,5 +1,6 @@
 package com.maco.clientejuegos.gui;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.LinearLayout;
@@ -41,6 +42,8 @@ public class PartidaSudokuActivity extends AppCompatActivity implements IMessage
             else {
                 Store.get().toast("Has perdido");
             }
+            Intent intent=new Intent(this, MainMenuActivity.class);
+            startActivity(intent);
         }
     }
     public String getLastBoardSent(){
