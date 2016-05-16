@@ -34,7 +34,7 @@ public class PartidaSudokuActivity extends AppCompatActivity implements IMessage
         if (jsm.getType().equals(SudokuMovementAnnouncementMessage.class.getSimpleName())) {
             SudokuMovementAnnouncementMessage sbm = (SudokuMovementAnnouncementMessage) jsm;
             if (sbm.getRow()==0 && sbm.getRow()==0){
-                if (initialBoard.charAt(0)!=' ' && (sbm.getValue()>0 && sbm.getValue()<10)){
+                if (initialBoard.charAt(0)!=' ' && sbm.getValue()==-1){
                     casillasRival.get(0).setText((Character.toString('*')));
                 }
             }else{
