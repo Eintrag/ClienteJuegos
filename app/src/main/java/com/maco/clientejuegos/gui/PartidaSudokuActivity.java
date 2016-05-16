@@ -27,12 +27,20 @@ public class PartidaSudokuActivity extends AppCompatActivity implements IMessage
     private String idUser;
     private LinearLayout layout;
     private String lastBoardSent;
+    private String initialBoard;
     @Override
     public void showMessage(JSONMessage jsm) {
         //Se ejecuta cada vez que messageRecover mande una petición al servidor. Dependiendo del tipo hará una u otra cosa.
         if (jsm.getType().equals(SudokuMovementAnnouncementMessage.class.getSimpleName())) {
             SudokuMovementAnnouncementMessage sbm = (SudokuMovementAnnouncementMessage) jsm;
-            casillasRival.get(sbm.getRow() * 9 + sbm.getCol()).setText((Character.toString('*')));
+            if (sbm.getRow()==0 && sbm.getRow()==0){
+                if (initialBoard.charAt(0)!=' ' && (sbm.getValue()>0 && sbm.getValue()<10)){
+                    casillasRival.get(0).setText((Character.toString('*')));
+                }
+            }else{
+                casillasRival.get(sbm.getRow() * 9 + sbm.getCol()).setText((Character.toString('*')));
+            }
+
         }
         else if (jsm.getType().equals(SudokuWinnerMessage.class.getSimpleName())){
             SudokuWinnerMessage swm = (SudokuWinnerMessage) jsm;
@@ -58,7 +66,6 @@ public class PartidaSudokuActivity extends AppCompatActivity implements IMessage
         setContentView(R.layout.activity_partida_sudoku);
         this.layout = (LinearLayout) findViewById(R.id.layoutPSudoku);
         Store.get().setCurrentContext(this);
-        String board;
         String jugador1;
         String jugador2;
 
@@ -69,18 +76,18 @@ public class PartidaSudokuActivity extends AppCompatActivity implements IMessage
         if (savedInstanceState == null) {
             Bundle extras = getIntent().getExtras();
             if (extras == null) {
-                board = null;
+                initialBoard = null;
                 jugador1 = null;
                 jugador2 = null;
                 this.idMatch = 0;
             } else {
-                board = extras.getString("board");
+                initialBoard = extras.getString("board");
                 jugador1 = extras.getString("jugador1");
                 jugador2 = extras.getString("jugador2");
                 this.idMatch = extras.getInt("idMatch");
             }
         } else {
-            board = (String) savedInstanceState.getSerializable("board");
+            initialBoard = (String) savedInstanceState.getSerializable("board");
             jugador1 = (String) savedInstanceState.getSerializable("jugador1");
             jugador2 = (String) savedInstanceState.getSerializable("jugador2");
             this.idMatch = (int) savedInstanceState.getSerializable("idMatch");
@@ -262,8 +269,8 @@ public class PartidaSudokuActivity extends AppCompatActivity implements IMessage
 
 
         //Bucle de relleno de los sudoku iniciales:
-        poblarMiTablero(board);
-        poblarTableroRival(board);
+        poblarMiTablero(initialBoard);
+        poblarTableroRival(initialBoard);
         lastBoardSent = getBoard();
         MovementSender movementSender = MovementSender.get(this);
         movementSender.setActivity(this);
